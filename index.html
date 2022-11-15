@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="components/style.css" />
+    <title>Frontend Mentor | Clock App</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main>
+      <section class="main-sect">
+        <div class="main-content">
+          <div class="quote-box">
+            <div class="quote-wrap">
+              <div class="quote">
+                <q></q>
+                <span
+                  ><img
+                    src="assets/desktop/icon-refresh.svg"
+                    class="refresh"
+                    alt=""
+                /></span>
+              </div>
+              <h4 class="author">Mark Kruc</h4>
+            </div>
+          </div>
+
+          <div class="greet-time-location">
+            <div class="greet">
+              <img src="assets/desktop/icon-sun.svg" alt="" id="icc" />
+              <p class="greet-proper">
+                <span id="gretings">GOOD MORNING</span>, IT'S CURRENTLY
+              </p>
+            </div>
+            <div class="time">
+              <h1 id="time">
+                <span class="hr">11</span>:<span class="min">37</span>
+              </h1>
+              <span id="abbr">BST</span>
+            </div>
+            <div class="location">
+              <p>
+                IN <span id="city">LONDON</span>, <span id="country">UK</span>
+              </p>
+              <div class="more-less-btn">
+                <span id="more">MORE</span>
+                <img src="assets/desktop/icon-arrow-up.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-sect">
+        <div class="first-sect">
+          <div class="common country-day">
+            <div class="one-ph">
+              <p>CURRENT TIMEZONE</p>
+              <h2 id="timezone">Europe/London</h2>
+            </div>
+            <div class="one-ph">
+              <p>DAY OF THE YEAR</p>
+              <h2 id="yearday">295</h2>
+            </div>
+          </div>
+          <hr />
+          <div class="common week-day">
+            <div class="one-ph">
+              <p>DAY OF THE WEEK</p>
+              <h2 id="weekday">5</h2>
+            </div>
+            <div class="one-ph">
+              <p>WEEK NUMBER</p>
+              <h2 id="weekno">42</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/components/script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

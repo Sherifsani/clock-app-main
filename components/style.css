@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "inter", sans-serif;
+}
+main {
+  /* overflow-y: hidden; */
+  height: 100vh;
+  transition: transform 0.5s ease;
+}
+body {
+  background-image: url("../assets/desktop/bg-image-daytime.jpg");
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-content {
+  position: relative;
+  padding: 50px 100px;
+  /* z-index: 1000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+.main-sect {
+}
+p,
+h1,
+h2,
+h4,
+span,
+q {
+  color: white;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  /* z-index: 71; */
+}
+.quote {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.quote-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.greet,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+h1 {
+  font-size: 11.7rem;
+}
+
+.time {
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  align-items: baseline;
+}
+#abbr {
+  font-size: 28px;
+}
+.time h1 {
+  display: inline;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.more-less-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  color: black;
+  border-radius: 50px;
+  padding: 5px;
+  width: 120px;
+  justify-content: space-evenly;
+}
+.more-less-btn img {
+  width: 25px;
+  transition: transform 0.2s linear;
+}
+#more {
+  color: black;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.bottom-sect {
+  padding: 50px 100px;
+  height: 50%;
+  width: 100%;
+  background-color: #fff;
+}
+.bottom-sect p,
+.bottom-sect h2 {
+  color: black;
+}
+.bottom-sect p {
+  font-size: 12px;
+}
+.bottom-sect h2 {
+  font-size: 3rem;
+}
+.first-sect {
+  display: flex;
+  margin-bottom: 50px;
+}
+.common {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+}
+.one-ph {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+hr {
+  margin-right: 40px;
+  opacity: 0.4;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.shift {
+  transform: translateY(-45%);
+}
+.spin {
+  transform: rotate(360deg);
+}
+.refresh {
+  cursor: pointer;
+}
+.refreshe {
+  animation: spin 1s;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#city,
+#country {
+  text-transform: uppercase;
+  font-size: 1.22rem;
+}
+h1 span {
+  font-size: 11.7rem;
+}
+.night {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/desktop/bg-image-nighttime.jpg");
+}
